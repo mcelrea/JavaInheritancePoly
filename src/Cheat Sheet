@@ -1,0 +1,5 @@
+Inheritance
+----------------------
+  * super-class, parent class
+  * sub-class, child class
+  * The sub-class MUST call the super-class constructor FIRST
