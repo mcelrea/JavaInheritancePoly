@@ -12,4 +12,13 @@ public class Enemy extends Entity {
         this.strength = strength;
         this.intelligence = intelligence;
     }
+
+    public void attack() {
+        System.out.println(name + " attacks you for 1 damage");
+    }
+
+    //overriden method
+    public String toString() {
+        return "(ENEMY)" + name + " at (" + x + "," + y + ")";
+    }
 }

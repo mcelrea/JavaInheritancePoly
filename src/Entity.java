@@ -1,7 +1,7 @@
 public class Entity {
-    private int x;
-    private int y;
-    private String name;
+    protected int x;
+    protected int y;
+    protected String name;
 
     public Entity(int x, int y, String name) {
         this.x = x;
@@ -35,6 +35,6 @@ public class Entity {
 
     @Override
     public String toString() {
-        return name + " at (" + x + "," + y + ")";
+        return "(ENTITY)" + name + " at (" + x + "," + y + ")";
     }
 }
