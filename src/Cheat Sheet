@@ -3,10 +3,39 @@ Inheritance
   * super-class, parent class
   * sub-class, child class
   * The sub-class MUST call the super-class constructor FIRST
+        * sub-classes inherit everything BUT the constructor
   * OVERIDDEN METHOD: a method that a sub-class redefines (or re-writes, changes)
+  * OVERLOADED METHOD: a method with the same name as another method, but
+                       a different method signature (parameters)
+  * Calling super class methods:
+        * a subclass can call super class method using super.methodName()
+            * there is NO way to do super.super.methodName()
   * PRIVATE -> Blocks access for everyone (even sub-classes/children)
   * PUBLIC -> Party time....everyone has access!!!!
   * PROTECTED -> Children/sub-classes have access....everyone else is blocked
   * An object (variable) can only call methods that exist in the class it is
     DECLARED as.
         * After this is satisified....Polymorphism (echo, echo, echo) may take place!
+  * Interfaces
+        * CANNOT have variables except static and final
+            * Example: static final double PI = 3.1415
+        * interfaces are IMPLEMENTED
+            * all methods need to be completed when implementing an interface
+        * NO CODE ALLOWED
+        * Purpose: to help organize code and program in teams.
+  * Abstract classes
+        * somewhere between concrete classes and interfaces
+            * You write some code, but not all code
+        * Must have at least on abstract method
+            * a method that is not completed (no code)
+
+Polymorphism
+-----------------------
+  * The ability for Java to call the correct version of a method when a object is
+    stored in a superclass variable.
+  * An object (variable) can only call methods that exist in the class it is.
+        * After this is satisfied.....the correct version of the method will be called
+            * What type of object is actually stored
+                * for example:
+                    * Enemy e = new Zombie();
+                      e.attack() will call ZOMBIE's attack

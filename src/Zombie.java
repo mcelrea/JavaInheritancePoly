@@ -8,4 +8,8 @@ public class Zombie extends Enemy {
     public void attack() {
         System.out.println(name + " kicks you with a slimy foot...ewwww....2 points of damage");
     }
+
+    public String toString() {
+        return super.toString() + " as a Zombie";
+    }
 }

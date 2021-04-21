@@ -3,10 +3,26 @@ Inheritance
   * super-class, parent class
   * sub-class, child class
   * The sub-class MUST call the super-class constructor FIRST
+        * sub-classes inherit everything BUT the constructor
   * OVERIDDEN METHOD: a method that a sub-class redefines (or re-writes, changes)
+  * OVERLOADED METHOD: a method with the same name as another method, but
+                       a different method signature (parameters)
+  * Calling super class methods:
   * PRIVATE -> Blocks access for everyone (even sub-classes/children)
   * PUBLIC -> Party time....everyone has access!!!!
   * PROTECTED -> Children/sub-classes have access....everyone else is blocked
   * An object (variable) can only call methods that exist in the class it is
     DECLARED as.
         * After this is satisified....Polymorphism (echo, echo, echo) may take place!
+
+
+Polymorphism
+-----------------------
+  * The ability for Java to call the correct version of a method when a object is
+    stored in a superclass variable.
+  * An object (variable) can only call methods that exist in the class it is.
+        * After this is satisfied.....the correct version of the method will be called
+            * What type of object is actually stored
+                * for example:
+                    * Enemy e = new Zombie();
+                      e.attack() will call ZOMBIE's attack

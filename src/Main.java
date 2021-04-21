@@ -10,8 +10,12 @@ public class Main {
         //createEntities();
         //printEntities();
 
-        createEnemies();
-        enemiesAttack();
+        //createEnemies();
+        //enemiesAttack();
+
+        Zombie s = new Zombie(105,103,"Z1",10,2,2);
+        System.out.println(s);
+
     }
 
     public static void enemiesAttack() {
